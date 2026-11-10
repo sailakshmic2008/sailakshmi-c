@@ -1,6 +1,6 @@
 import csv
 from validator import validate_contact
-from analytics import show_report
+from analytics import generate_report
 
 students = []
 with open("student_clean.csv") as f:
@@ -39,6 +39,6 @@ while True:
         students = [s for s in students if s["phone"] != p]
         print("Deleted")
     elif ch == "6":
-        show_report(students, 20)
+        generate_report(students, 20)
     elif ch == "7":
         save(); print("Saved. Bye!"); break
