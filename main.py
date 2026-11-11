@@ -39,6 +39,6 @@ while True:
         students = [s for s in students if s["phone"] != p]
         print("Deleted")
     elif ch == "6":
-        generate_report(students, 20)
+        generate_report()
     elif ch == "7":
         save(); print("Saved. Bye!"); break
